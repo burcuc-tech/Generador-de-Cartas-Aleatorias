@@ -1,35 +1,36 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🃏 Generador de Cartas Aleatorias</h1>
+        <h3 class="mt-4 text-white">Historial de Cartas:</h3>
+    <div id="historial" class="text-white"></div>
+        
+        <div id="card" class="card">
+            <div class="top-suit">♠</div>
+            <div class="number">A</div>
+            <div class="bottom-suit">♠</div>
+        </div>
+    <div id="contador">Cartas generadas: 0</div>
+      <div class="buttons-row">
+            <button id="btnGenerate">Generar Nueva Carta</button>
+            <button id="btnReset">Reset</button>
       </div>
+        <div class="auto-container">
+    <button id="btnAuto">Auto-Generar</button>
+    <button id="btnStop">Detener</button>
+ </div>
+    <div class="speed-input">
+        <label for="inputSpeed">Velocidad (s):</label>
+        <input type="number" id="inputSpeed" value="3" min="1" />
     </div>
-
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+</div>   
     <script type="module" src="/app.js"></script>
-  </body>
+</body>
 </html>

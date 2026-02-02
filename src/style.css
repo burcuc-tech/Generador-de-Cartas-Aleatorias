@@ -1,5 +1,137 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #017247 0%, #05bb57 100%);
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+.card {
+    width: 200px;
+    height: 300px;
     background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.top-suit {
+    font-size: 50px;
+    text-align: left;
+}
+
+.number {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bottom-suit {
+    font-size: 50px;
+    text-align: right;
+}
+
+.spade ,.club {
+  color: black; 
+}
+
+.heart ,.diamond { 
+  color:red;
+}
+
+button {
+    background: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#inputSpeed {
+    width: 50px;  
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px; 
+}
+.speed-input label {
+    font-size: 16px;        
+    color: white;  
+    font-weight: bold;
+}
+
+#historial {
+    margin: 15px auto;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#btnGenerate {
+    background: #3498db;
+    color: white;
+}
+
+#btnAuto {
+    background: #0dea489e;
+    color: white;
+}
+
+#btnStop {
+    background: #e74c3c;
+    color: white;
+}
+
+#btnReset {
+    background: orange;
+    color: white;
 }
